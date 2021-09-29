@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Meditate App</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="wrapper">
+        <div class="app">
+            <div class="cover">
+                <img class="cover__img" src="./images/rain-in-london.jpg" alt="Picture with rain">
+                <div class="cover__animated-circle">
+                    <span class="cover__animated-text">Ожидание</span>
+                </div>
+            </div>
+
+            <div class="controllers">
+                <h1>Медитация</h1>
+                <div class="settings__wrapper">
+                    <div class="settings">
+                        <div class="settings__item">
+                            <span class="settings__head">Таймер (в минутах)</span>
+                            <input class="settings__input" type="text" placeholder="мин: 1" name="timer">
+                        </div>
+                        <div class="settings__item">
+                            <span class="settings__head">Длительность вдоха (в секундах)</span>
+                            <input class="settings__input" type="text" placeholder="мин: 4" name="breatheIn">
+                        </div>
+                        <div class="settings__item">
+                            <span class="settings__head">Длительность выдоха (в секундах)</span>
+                            <input class="settings__input" type="text" placeholder="мин: 4" name="breatheOut">
+                        </div>
+                        <div class="settings__item">
+                            <span class="settings__head">Громкость фона</span>
+                            <input class="settings__range" type="range" min="1" max="100" value="100" name="backgroundVolumeInput">
+                        </div>
+                        <div class="settings__item">
+                            <span class="settings__head">Громкость сигнала</span>
+                            <input class="settings__range" type="range" min="1" max="100" value="100" name="signalVolumeInput">
+                            <audio data-audio="breathe-in" src="./audios/breathe-in.mp3"></audio>
+                            <audio data-audio="breathe-out" src="./audios/breathe-out.mp3"></audio>
+                        </div>
+                        <div class="settings__buttons">
+                            <button class="settings__button settings__button_start" type="button">Старт</button>
+                            <button class="settings__button settings__button_stop" type="button">Стоп</button>
+                        </div>
+                        <div class="settings__message"></div>
+                        <audio data-audio="raining-hard" src="./audios/raining-hard.mp3" loop></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="error">
+            <span class="error__label">Ошибка!<br>Приложение доступно только на девайсах с шириной дисплея больше чем 1200 пикселей.</span>
+        </div>
+    </section>    
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>
