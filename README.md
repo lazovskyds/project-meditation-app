@@ -1,6 +1,6 @@
 # Приложение для медитации
 
-![preview image](https://image.prntscr.com/image/ZfzNhiLQSO6YJ0IAY-RSow.png)
+![preview image](https://raw.githubusercontent.com/lazovskyds/project-meditation-app/master/preview.png)
 
 **Это мой pet-проект, простое SPA для медитации, которое написано без фреймворков и библиотек, только чистый JavaScript.**
 
